@@ -1,0 +1,36 @@
+.button {
+	@include flex-center(true); //зачем тут display: flex; ?
+
+	height: var(--button-height);
+	padding-inline: 67px;
+	font-size: 16px;
+	color: var(--color-accent);
+	background-color: transparent;
+	border: var(--border);
+	border-radius: var(--border-radius);
+
+	@include hover {
+		color: var(--color-light);
+		background-color: var(--color-accent);
+	}
+
+	&--alternative {
+		color: var(--color-accent);
+		background-color: var(--color-light);
+
+		@include hover {
+			color: var(--color-light);
+			background-color: var(--color-accent-alt);
+		}
+	}
+
+	&-accent {
+		color: var(--color-light);
+		background-color: var(--color-accent);
+
+		@include hover {
+			color: var(--color-accent);
+			background-color: var(--color-light);
+		}
+	}
+}

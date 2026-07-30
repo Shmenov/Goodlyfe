@@ -1,0 +1,56 @@
+body {
+	font-family: var(--font-poppins);
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 2.31;
+	color: var(--color-dark);
+	background-color: var(--color-light);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+	transition-duration: var(--transition-duration);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+
+h1, .h1 {
+	@include fluid-text(70, 32);
+}
+
+h2, .h2 {
+	@include fluid-text(60, 43);
+}
+
+h3, .h3 {
+	@include fluid-text(48, 26);
+}
+
+h4, .h4 {
+	@include fluid-text(40, 18);
+}
+
+h5, .h5 {
+	@include fluid-text(38, 27);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+	}
+}
+
+.footer {
+	font-family: var(--font-manrope);
+}

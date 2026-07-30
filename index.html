@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="GoodLyfe Gyms — premium fitness club with classes, nutrition plans and top facilities. Join us and become more than you are.">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Daniyar">
+	<meta name="theme-color" content="#E43071">
+
+	<meta property="og:title" content="GoodLyfe Gyms — Premium Fitness Club">
+	<meta property="og:description" content="Join GoodLyfe Gyms and transform your body. Classes, timetable, nutrition and premium facilities await you.">
+	<meta property="og:image" content="/images/logo.svg">
+	<meta property="og:url" content="#">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Goodlyfe">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="GoodLyfe Gyms — Premium Fitness Club">
+	<meta name="twitter:description" content="Join GoodLyfe Gyms and transform your body. Classes, timetable, nutrition and premium facilities await you.">
+	<meta name="twitter:image" content="/images/logo.svg">
+	<meta name="twitter:site" content="@goodlyfe">
+
+	<title>Goodlyfe</title>
+
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<!-- <link rel="preload" href="/images/hero/hero.avif" as="image" type="image/avif" fetchpriority="high"> -->
+	<link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+	<link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__inner container">
+			<a href="#" class="header__logo logo">
+				<img src="/images/logo.svg" alt="Goodlyfe" class="logo__image" width="187" height="44">
+			</a>
+			<nav class="header__menu">
+				<ul class="header__menu-list">
+					<li class="header__menu-item hidden-mobile">
+						<a href="#" class="header__menu-link">Classes</a>
+					</li>
+					<li class="header__menu-item hidden-mobile">
+						<a href="#" class="header__menu-link">Timetable</a>
+					</li>
+					<li class="header__menu-item hidden-mobile">
+						<a href="#" class="header__menu-link">Clubs</a>
+					</li>
+					<li class="header__menu-item hidden-mobile">
+						<a href="#" class="header__menu-link">Nutrition</a>
+					</li>
+					<li class="header__menu-item hidden-mobile">
+						<a href="#" class="header__menu-link">Free Trial</a>
+					</li>
+					<li class="header__menu-item header__menu--search">
+						<a href="#" class="header__menu-link hidden-mobile">Search</a>
+						<img src="/images/icons/lens.svg" alt="что тут писать?" class="menu-link__image" width="20" height="20">
+					</li>
+				</ul>
+			</nav>
+			
+			<button class="header__button button button--alternative hidden-mobile" type="button">Login</button>
+			<button class="header__burger-button button__burger-menu burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+				<span class="visually-hidden">Open navigation menu</span>
+			</button>
+		</div>
+	</header>
+
+	<main class="main" id="main">
+		
+	</main>
+
+	<footer class="footer">
+		
+	</footer>
+
+
+	<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+		<form class="mobile-overlay__close-button-wrapper" method="dialog">
+			<button class="mobile-overlay__close-button cross-button" type="submit">
+				<span class="visually-hidden">Close navigation menu</span>
+			</button>
+		</form>
+		<div class="mobile-overlay__body">
+			<ul class="mobile-overlay__list">
+				<li class="mobile-overlay__item">
+					<a href="#" class="mobile-overlay__link">Classes</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#" class="mobile-overlay__link">Timetable</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#" class="mobile-overlay__link">Clubs</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#" class="mobile-overlay__link">Nutrition</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#" class="mobile-overlay__link">Free Trial</a>
+				</li>
+			</ul>
+		</div>
+	</dialog>
+	<script src="/js/index.js" defer></script>
+</body>
+</html>
