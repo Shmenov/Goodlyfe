@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Prepros
+prepros.config
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
