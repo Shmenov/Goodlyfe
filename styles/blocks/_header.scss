@@ -23,6 +23,10 @@
 		}
 
 		@include tablet {
+			max-width: 187px;
+		}
+
+		@include mobile-s {
 			max-width: 102px;
 		}
 	}

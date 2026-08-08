@@ -17,6 +17,6 @@
 		height: 2px;
 		background-color: var(--color-light);
 		border-radius: 5px;
-		box-shadow: 0 -8px, 0 8px; //как сделать чтобы новые линии были белыми ?
+		box-shadow: 0 -8px 0 var(--color-light), 0 8px 0 var(--color-light);
 	}
 }

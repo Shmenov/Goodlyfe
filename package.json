@@ -1,0 +1,30 @@
+{
+  "name": "goodlyfe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+ "scripts": {
+    "sass": "sass --watch styles/style.scss:styles/style.css --no-source-map --silence-deprecation=import",
+    "postcss": "postcss styles/style.css --output styles/style.min.css --watch",
+    "dev": "npm run sass & npm run postcss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shmenov/Goodlyfe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Shmenov/Goodlyfe/issues"
+  },
+  "homepage": "https://github.com/Shmenov/Goodlyfe#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.5.4",
+    "cssnano": "^8.0.2",
+    "postcss": "^8.5.25",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.102.0"
+  }
+}

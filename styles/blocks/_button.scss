@@ -1,5 +1,5 @@
 .button {
-	@include flex-center(true); //зачем тут display: flex; ?
+	@include flex-center(true);
 
 	height: var(--button-height);
 	padding-inline: 67px;
@@ -8,6 +8,7 @@
 	background-color: transparent;
 	border: var(--border);
 	border-radius: var(--border-radius);
+	cursor: pointer;
 
 	@include hover {
 		color: var(--color-light);

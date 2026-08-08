@@ -1,0 +1,41 @@
+.pagination {
+	margin-top: 156px;
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 8px;
+	}
+
+	&__button {
+		@include reset-button;
+		@include flex-center;
+		@include square(12px);
+
+		background-color: var(--color-light);
+		border-radius: 50%;
+		position: relative;
+		transition: transform var(--transition-duration), background-color var(--transition-duration);
+
+		&::before {
+			content: '';
+			position: absolute;
+			inset: -4px;
+		}
+
+		@include hover {
+			background-color: var(--color-accent);
+			transform: scale(1.4);
+		}
+
+		&.is-current {
+			width: 17px;
+			background-color: var(--color-accent);
+
+			@include hover {
+				transform: none;
+			}
+		}
+	}
+}

@@ -5,9 +5,6 @@
 .Spotlight-V100
 .Trashes
 
-# Prepros
-prepros.config
-
 # VS Code
 .vscode/
 

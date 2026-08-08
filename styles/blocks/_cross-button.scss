@@ -11,10 +11,9 @@
 
 	&::before,
 	&::after {
+		@include abs-center;
+
 		content: '';
-		position: absolute;
-		top: 50%;
-		left: 7px;
 		width: 70%;
 		height: 2px;
 		background-color: var(--color-accent);
@@ -25,7 +24,7 @@
 		rotate: 45deg;
 	}
 
-		&::after {
+	&::after {
 		rotate: -45deg;
 	}
 }
