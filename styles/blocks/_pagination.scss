@@ -15,6 +15,7 @@
 
 		background-color: var(--color-light);
 		border-radius: 50%;
+		cursor: pointer;
 		position: relative;
 		transition: transform var(--transition-duration), background-color var(--transition-duration);
 
@@ -32,6 +33,7 @@
 		&.is-current {
 			width: 17px;
 			background-color: var(--color-accent);
+			cursor: not-allowed;
 
 			@include hover {
 				transform: none;

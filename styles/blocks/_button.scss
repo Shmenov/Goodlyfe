@@ -8,7 +8,6 @@
 	background-color: transparent;
 	border: var(--border);
 	border-radius: var(--border-radius);
-	cursor: pointer;
 
 	@include hover {
 		color: var(--color-light);

@@ -1,0 +1,80 @@
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 80px;
+
+	@include mobile {
+		flex-direction: column;
+		row-gap: 15px;
+	}
+
+	&__media {
+		position: relative;
+		flex-shrink: 0;
+		width: 380px;
+		height: 500px;
+
+		@include mobile-s {
+			width: 100%;
+			height: 350px;
+		}
+	}
+
+	&__image {
+		position: absolute;
+		object-fit: cover;
+		border-radius: var(--border-radius);
+
+		&--large {
+			width: 60%;
+			height: 80%;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+
+		&--small {
+			width: 50%;
+			height: 70%;
+			bottom: 0;
+			right: 0;
+			z-index: 2;
+		}
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: 30px;
+
+		@include tablet {
+			row-gap: 22px;
+		}
+
+		@include mobile {
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		color: var(--color-accent);
+
+		@include mobile {
+			font-size: 40px;
+			line-height: 1.2;
+		}
+	}
+
+	&__description {
+		max-width: 540px;
+	}
+
+	&__button {
+		@include mobile-s {
+			width: 100%;
+		}
+	}
+}

@@ -14,8 +14,8 @@
 
 	--shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.18);
 
-	--font-poppins: 'Poppins', sans-serif;
-	--font-manrope: 'Manrope', sans-serif;
+	--font-poppins: 'Poppins', sans-serif; //--font-family-base
+	--font-manrope: 'Manrope', sans-serif; //--font-family-accent
 
 	--container-width: 1370px;
 	--container-padding-x: 20px;
@@ -36,5 +36,6 @@
 
 	@include mobile {
 		--section-padding-y: 35px;
+		--button-height: 58px;
 	}
 }
