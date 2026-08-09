@@ -1,0 +1,60 @@
+.banner {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	color: var(--color-light);
+	background-image: url('/images/posters/post1.avif');
+	background-size: cover;
+	background-position: center;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	&__inner {
+		position: relative;
+		z-index: 1;
+		flex: 1;
+		display: flex;
+		align-items: center;
+		padding-top: calc(2.5 * var(--section-padding-y));
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		row-gap: 35px;
+		margin-inline: auto;
+
+		@include mobile {
+			row-gap: 24px;
+		}
+	}
+
+	&__title {
+		line-height: 1;
+	}
+
+	&__description {
+		max-width: 400px;
+	}
+
+	&__button {
+		padding-inline: 78px;
+
+		@include mobile-s {
+			width: 100%;
+		}
+	}
+
+	&__pagination {
+		position: relative;
+		z-index: 1;
+		padding-bottom: 25px;
+	}
+}
