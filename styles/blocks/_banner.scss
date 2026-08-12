@@ -2,8 +2,13 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	min-height: 450px;
 	color: var(--color-light);
-	background-image: url('/images/posters/post1.avif');
+	background-image: image-set(
+		url('/images/posters/post1.avif') type('image/avif'),
+		url('/images/posters/post1.webp') type('image/webp'),
+		url('/images/posters/post1.jpg')  type('image/jpeg')
+	);
 	background-size: cover;
 	background-position: center;
 
@@ -20,7 +25,7 @@
 		flex: 1;
 		display: flex;
 		align-items: center;
-		padding-top: calc(2.5 * var(--section-padding-y));
+		padding-block: calc(2.5 * var(--section-padding-y));
 	}
 
 	&__body {
@@ -34,10 +39,6 @@
 		@include mobile {
 			row-gap: 24px;
 		}
-	}
-
-	&__title {
-		line-height: 1;
 	}
 
 	&__description {
