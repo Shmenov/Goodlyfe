@@ -1,0 +1,41 @@
+.review-card {
+	display: flex;
+	flex-direction: column;
+	row-gap: 26px;
+	max-width: 350px;
+	padding: 30px;
+	background-color: var(--color-light);
+	border-radius: var(--border-radius-small);
+	box-shadow: var(--shadow);
+
+	&__result {
+		color: var(--color-accent);
+	}
+
+	&__quote {
+		margin: 0;
+		padding: 0;
+		position: relative;
+		padding-left: 30px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			background-image: url('/images/icons/quotes.svg');
+			background-repeat: no-repeat;
+			width: 25px;
+			height: 20px;
+			left: 0;
+			top: 0;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.7;
+		}
+	}
+
+	&--featured {
+		max-width: 450px;
+	}
+}

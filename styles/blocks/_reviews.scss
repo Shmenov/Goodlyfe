@@ -1,0 +1,62 @@
+.reviews {
+	background: linear-gradient(to bottom, #fff, var(--color-accent-alt));
+	padding-top: 0;
+
+	@include tablet {
+		padding-top: var(--section-padding-y);
+	}
+
+	&__inner {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+
+		@include tablet {
+			display: flex;
+			flex-direction: column;
+			row-gap: 25px;
+		}
+	}
+
+	&__header {
+		display: flex;
+		flex-direction: column;
+		row-gap: 12px;
+		position: relative;
+		top: 100px;
+		right: 100px;
+
+		@include desktop {
+			top: 70px;
+			right: 70px;
+		}
+
+		@include tablet {
+			position: static;
+			align-items: center;
+			row-gap: 6px;
+		}
+	}
+
+	&__cards {
+		display: flex;
+		column-gap: 33px;
+		align-items: center;
+
+		@include tablet {
+			flex-direction: column;
+			row-gap: 27px;
+		}
+
+		&-column {
+			display: flex;
+			flex-direction: column;
+			row-gap: 33px;
+
+			@include tablet {
+				align-items: center;
+				row-gap: 27px;
+			}
+		}
+	}
+}
