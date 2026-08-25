@@ -23,12 +23,12 @@
 
 	<title>Goodlyfe</title>
 
-	<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="manifest" href="/site.webmanifest"> -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="./images/favicon/site.webmanifest">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
 
-	<!-- <link rel="preload" href="/images/hero/hero.avif" as="image" type="image/avif" fetchpriority="high"> -->
+	<link rel="preload" href="/images/hero/hero.avif" as="image" type="image/avif" fetchpriority="high">
 	<link rel="preload" href="/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet" href="/styles/style.min.css">
 </head>
@@ -226,32 +226,40 @@
 			</div>
 		</section>
 
-		<!-- <section class="app section container">
-			<div class="app__body">
-				<h2 class="app__title h4">Don’t forget our app</h2>
-				<div class="app__description">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus, ut imperdiet augue.</p>
+		<section class="app">
+			<div class="app__inner container">
+				<div class="app__body">
+					<h2 class="app__title h4">Don't forget our app</h2>
+					<div class="app__description">
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus, ut imperdiet augue.</p>
+					</div>
+					<div class="app__download">
+						<p class="app__download-label">Download now:</p>
+						<div class="app__badges">
+							<a href="#" class="app__badge" target="_blank" rel="noopener noreferrer" aria-label="Download on Google Play">
+								<img src="/images/icons/google.svg" alt="Get it on Google Play" width="135" height="40">
+							</a>
+							<a href="#" class="app__badge" target="_blank" rel="noopener noreferrer" aria-label="Download on App Store">
+								<img src="/images/icons/apple.svg" alt="Download on the App Store" width="135" height="40">
+							</a>
+						</div>
+					</div>
 				</div>
-				<p class="app__download-label">Download now:</p>
-				<ul class="app__badges">
-					<li class="app__badge">
-						<a href="#" class="app__badge-link">
-							<img src="/images/icons/google.svg" alt="get it on google play" class="app__image" width="135" height="40" loading="lazy">
-						</a>
-					</li>
-					<li class="app__badge">
-						<a href="#" class="app__badge-link">
-							<img src="/images/icons/apple.svg" alt="download on the app store" class="app__image" width="135" height="40" loading="lazy">
-						</a>
-					</li>
-				</ul>
-			</div>
 
-			<div class="app__phones">
-				<img src="/images/phone1.png" alt="" class="app__phone app__phone--front" width="232" height="464" loading="lazy">
-				<img src="/images/phone2.png" alt="" class="app__phone app__phone--back" width="232" height="464" loading="lazy">
+				<div class="app__media">
+					<picture class="app__mockup app__mockup--front">
+						<source srcset="./images/phone1.avif" type="image/avif">
+						<source srcset="./images/phone1.webp" type="image/webp">
+						<img src="./images/phone1.png" alt="" width="232" height="464" loading="lazy" aria-hidden="true">
+					</picture>
+					<picture class="app__mockup app__mockup--back">
+						<source srcset="./images/phone2.avif" type="image/avif">
+						<source srcset="./images/phone2.webp" type="image/webp">
+						<img src="./images/phone2.png" alt="" width="232" height="380" loading="lazy" aria-hidden="true">
+					</picture>
+				</div>
 			</div>
-		</section> -->
+		</section>
 	</main>
 
 	<footer class="footer">
