@@ -23,12 +23,13 @@
 
 	<title>Goodlyfe</title>
 
+	<link rel="shortcut icon" href="./images/favicon/favicon.ico">
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
 	<link rel="manifest" href="./images/favicon/site.webmanifest">
 	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
 
-	<link rel="preload" href="/images/hero/hero.avif" as="image" type="image/avif" fetchpriority="high">
+	<link rel="preload" href="./images/hero.avif" as="image" type="image/avif" fetchpriority="high">
 	<link rel="preload" href="/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet" href="/styles/style.min.css">
 </head>
@@ -255,11 +256,37 @@
 					<picture class="app__mockup app__mockup--back">
 						<source srcset="./images/phone2.avif" type="image/avif">
 						<source srcset="./images/phone2.webp" type="image/webp">
-						<img src="./images/phone2.png" alt="" width="232" height="380" loading="lazy" aria-hidden="true">
+						<img src="./images/phone2.png" alt="" width="232" height="464" loading="lazy" aria-hidden="true">
 					</picture>
 				</div>
 			</div>
 		</section>
+
+		<div class="soc1als">
+			<!-- <div class="soc1als__inner container">
+				<h2 class="soc1als__title h4">Social</h2>
+				<ul class="soc1als__list">
+					<li class="soc1als__item">
+						<a href="#" class="soc1als__link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+							<span class="visually-hidden">Facebook</span>
+							<img src="./images/socials/facebook.svg" alt="Facebook" class="soc1als__image" width="15" height="30" loading="lazy">
+						</a>
+					</li>
+					<li class="soc1als__item">
+						<a href="#" class="soc1als__link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+							<span class="visually-hidden">YouTube</span>
+							<img src="./images/socials/youtube.svg" alt="YouTube" class="soc1als__image" width="25" height="30" loading="lazy">
+						</a>
+					</li>
+					<li class="soc1als__item">
+						<a href="#" class="soc1als__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+							<span class="visually-hidden">Instagram</span>
+							<img src="./images/socials/instagram.svg" alt="Instagram" class="soc1als__image" width="30" height="30" loading="lazy">
+						</a>
+					</li>
+				</ul>
+			</div> -->
+		</div>
 	</main>
 
 	<footer class="footer">
@@ -293,6 +320,6 @@
 			</ul>
 		</div>
 	</dialog>
-	<script src="/js/index.js" defer></script>
+	<script src="./script.js" defer></script>
 </body>
 </html>

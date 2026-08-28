@@ -1,0 +1,28 @@
+.soc1als {
+	background-color: var(--color-light-alt);
+	padding-block: 65px;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 18px;
+	}
+
+	&__title {
+		color: var(--color-accent);
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 90px;
+	}
+
+	&__item {
+		@include square(110px);
+
+	
+	}
+}

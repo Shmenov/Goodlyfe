@@ -1,5 +1,10 @@
 .app {
 	background-color: var(--color-accent);
+	overflow-x: clip;
+
+	@include tablet {
+		padding-top: var(--section-padding-y);
+	}
 
 	&__inner {
 		display: flex;
@@ -7,9 +12,11 @@
 		align-items: center;
 		column-gap: 70px;
 
+
 		@include tablet {
 			flex-direction: column;
-			row-gap: 50px;
+			row-gap: 40px;
+			text-align: center;
 		}
 	}
 
@@ -19,6 +26,11 @@
 		row-gap: 16px;
 		color: var(--color-light);
 		max-width: 490px;
+	}
+
+	&__title {
+		font-size: 40px;
+		line-height: 1.2;
 	}
 
 	&__description {
@@ -35,15 +47,18 @@
 		display: flex;
 		align-items: center;
 		column-gap: 12px;
+
+		@include tablet {
+			justify-content: center;
+		}
 	}
 
 	&__badge {
 		display: block;
-		transition: transform var(--transition-duration), opacity var(--transition-duration);
+		transition: transform var(--transition-duration);
 
 		@include hover {
 			transform: scale(1.06);
-			opacity: 0.9;
 		}
 	}
 
@@ -54,14 +69,14 @@
 		height: 575px;
 		margin-top: calc(var(--section-padding-y) * -1);
 
-		@include tablet {
-			width: 100%;
-			height: 400px;
-			margin-top: 0;
-		}
 
 		@include mobile {
-			height: 300px;
+			width: 356px;
+			height: 455px;
+		}
+
+		@include mobile-s {
+			width: 250px;
 		}
 	}
 
@@ -70,22 +85,52 @@
 		display: block;
 
 		img {
-			display: block;
-			width: 100%;
-			height: auto;
-			filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+			@include mobile {
+				width: 166px;
+				height: 333px;
+			}
 		}
 
 		&--front {
 			left: 0;
-			top: 55px;
+			top: 54px;
 			z-index: 2;
+			filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+
+			@include mobile {
+				top: 29px;
+				left: 35px;
+			}
+
+			@include mobile-s {
+				top: 32px;
+				left: -20px;
+			}
 		}
 
 		&--back {
 			right: 0;
-			bottom: 0;
+			bottom: -89px;
 			z-index: 1;
+			filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+
+			img {
+				clip-path: inset(0 0 19% 0);
+			}
+
+			@include mobile {
+				right: -35px;
+				bottom: -24px;
+
+				img {
+					clip-path: none;
+				}
+			}
+
+			@include mobile-s {
+				right: -81px;
+				bottom: -25px;
+			}
 		}
 	}
 }
