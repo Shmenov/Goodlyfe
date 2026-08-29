@@ -4,10 +4,16 @@
 	flex-direction: column;
 	min-height: 450px;
 	color: var(--color-light);
+	background-image: url('/images/posters/post1.avif');
+	background-image: -webkit-image-set(
+		url('/images/posters/post1.avif') type('image/avif'),
+		url('/images/posters/post1.webp') type('image/webp'),
+		url('/images/posters/post1.jpg') type('image/jpeg')
+	);
 	background-image: image-set(
 		url('/images/posters/post1.avif') type('image/avif'),
 		url('/images/posters/post1.webp') type('image/webp'),
-		url('/images/posters/post1.jpg')  type('image/jpeg')
+		url('/images/posters/post1.jpg') type('image/jpeg')
 	);
 	background-size: cover;
 	background-position: center;
