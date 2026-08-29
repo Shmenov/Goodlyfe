@@ -11,18 +11,42 @@
 
 	&__title {
 		color: var(--color-accent);
+		font-size: 40px;
 	}
 
 	&__list {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 		column-gap: 90px;
+
+		@include mobile-s {
+			column-gap: 25px;
+		}
 	}
 
-	&__item {
+	&__link {
+		@include flex-center;
 		@include square(110px);
 
-	
+		background-color: var(--color-light);
+		border-radius: 50%;
+		transition: background-color var(--transition-duration);
+
+		@include hover {
+			background-color: var(--color-accent-alt);
+		}
+
+		@include mobile {
+			width: 75px;
+		}
+	}
+
+	&__image {
+		object-fit: contain;
+
+		@include mobile {
+			width: 28%;
+			height: 28%;
+		}
 	}
 }
