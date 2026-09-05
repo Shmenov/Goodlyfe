@@ -1,3 +1,178 @@
 .footer {
+	background-color: var(--color-dark-alt);
+	color: var(--color-light);
 	font-family: var(--font-manrope);
+
+	.footer__wrapper {
+		max-width: calc(1110px + var(--container-padding-x) * 2);
+	}
+
+	&__inner {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 1.5fr;
+		gap: 60px;
+		padding-block: 80px;
+
+		@include tablet {
+			grid-template-columns: 1fr 1fr;
+			gap: 40px;
+			padding-block: 60px;
+		}
+
+		@include mobile {
+			grid-template-columns: 1fr;
+			gap: 32px;
+			padding-block: 40px;
+		}
+	}
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+
+		&--brand {
+			row-gap: 24px;
+		}
+
+		@include tablet {
+			align-items: center;
+		}
+	}
+
+	&__logo-text {
+		font-family: var(--font-poppins);
+		font-size: 26px;
+		font-weight: bold;
+		color: var(--color-light);
+		line-height: 1.1;
+	}
+
+	&__logo-accent {
+		color: var(--color-accent);
+	}
+
+	&__description {
+		font-size: 14px;
+		line-height: 1.7;
+		color: var(--color-gray-alt);
+		max-width: 255px;
+	}
+
+	&__socials {
+		display: flex;
+		column-gap: 16px;
+
+		.soc1als__link {
+			@include square(36px);
+	
+			background-color: rgba(255,255,255,0.1);
+
+			@include hover {
+				background-color: var(--color-accent);
+			}
+
+			svg {
+				fill: #ffffff;
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+
+	&__col-title {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.5;
+		margin-bottom: 4px;
+	}
+
+	&__nav-list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 12px;
+		font-size: 14px;
+		line-height: 1.7;
+	}
+
+	&__nav-link {
+		color: var(--color-gray-alt);
+		transition: color var(--transition-duration);
+
+		@include hover {
+			color: var(--color-accent);
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+		font-style: normal;
+	}
+
+	&__contact {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+		font-size: 14px;
+		color: var(--color-gray-alt);
+
+		img {
+			flex-shrink: 0;
+		}
+
+		@include hover {
+			color: var(--color-accent);
+		}
+	}
+
+	&__address {
+		font-style: normal;
+		line-height: 1.2;
+	}
+
+	&__sub {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-block: 24px;
+		gap: 16px;
+
+		@include mobile {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+
+	&__copyright {
+		font-size: 13px;
+		opacity: 0.5;
+	}
+
+	&__legal {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		font-size: 14px;
+		color: var(--color-gray-alt);
+
+		@include mobile {
+			justify-content: center;
+		}
+	}
+
+	&__legal-link {
+		transition: color var(--transition-duration);
+
+		@include hover {
+			color: var(--color-light);
+		}
+	}
+
+	&__fence {
+		cursor: default;
+	}
 }
